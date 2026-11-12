@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HackerRig · 做 AI 买 Mac 还是攒显卡</title>
+  <meta name="description" content="从 Hacker News 2026 年评论里扒出的本地大模型亲测：什么机器、跑什么模型、每秒多少 token、满意还是后悔。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Hacker<span class="mark">Rig</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">三问</a>
+        <a href="regret.html">后悔实测</a>
+        <a href="#basis">口径说明</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="wrap">
+      <h1>做 AI，买 Mac 还是攒显卡？</h1>
+      <p class="thesis">把 Hacker News 2026 年网友<strong>亲手跑本地大模型</strong>的实测扒出来——什么机器、跑什么模型、每秒多少 token、满意还是后悔——做成能查的手册。每条都能点回原帖核对。</p>
+      <div class="kpis" id="kpis"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab" data-view="machine" role="tab"><span class="q">Q1</span>我有这台机器，能跑什么</button>
+      <button class="tab" data-view="model" role="tab"><span class="q">Q2</span>我想跑这个模型，要什么机器</button>
+      <button class="tab" data-view="compare" role="tab"><span class="q">Q3</span>Mac、显卡、统一内存主机，怎么选</button>
+    </div>
+    <div id="view-root"></div>
+    <div id="basis-mount"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
