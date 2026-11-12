@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HackerRig · 后悔的那些实测</title>
+  <meta name="description" content="网友明确表示后悔或不满意的本地大模型部署实测，按机器分组。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="regret">
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Hacker<span class="mark">Rig</span></a>
+      <div class="nav-links">
+        <a href="index.html">三问</a>
+        <a href="regret.html" class="active">后悔实测</a>
+        <a href="index.html#basis">口径说明</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="wrap">
+      <h1>后悔的那些实测</h1>
+      <p class="thesis">网友<strong>明确表示后悔或不满意</strong>的本地部署，按机器分组。慢、装不下、体验差——买之前先看看别人踩过的坑。每条都能点回 HN 原帖。</p>
+      <div class="notice regret-summary" id="regret-summary"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="regret-root"></div>
+    <section class="section anchor-offset">
+      <div class="basis">
+        <h3>这一页的口径</h3>
+        <p class="small muted" style="margin:0">只取网友亲测（first_person）且态度为「后悔」的记录，共 <span id="regret-total"></span> 条；重复报告不重复计数。速度中位数与排除规则见<a href="index.html#basis">首页口径说明</a>。全部为网友自述，仅供参考。</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('regret-total').textContent = window.HACKERRIG_DATA.meta.regret_fp_records;
+  </script>
+</body>
+</html>

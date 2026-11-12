@@ -1,0 +1,26 @@
+HackerRig
+=========
+
+This product includes data derived from the Hacker News dataset
+"open-index/hacker-news", available at:
+
+    https://huggingface.co/datasets/open-index/hacker-news
+
+The source data is licensed under the Open Data Commons Attribution
+License (ODC-By) v1.0. A copy of the license is available at:
+
+    https://opendatacommons.org/licenses/by/1.0/
+
+Required attribution:
+    Hacker News data from open-index/hacker-news (ODC-By).
+    https://huggingface.co/datasets/open-index/hacker-news
+
+Notes:
+- Only the 2026-01 through 2026-08-22 monthly shards were used; the source
+  data was read-only and is not modified or redistributed in raw form here.
+- The aggregated measurements, summaries, and statistics in this repository
+  are a derivative compilation of the source data and are provided under the
+  same ODC-By attribution terms.
+- Original Hacker News comments remain the property of their respective
+  authors. Public usernames and comment text are included as attribution
+  and source context, consistent with ODC-By.
