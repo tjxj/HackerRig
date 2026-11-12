@@ -123,6 +123,10 @@ python3 -I scripts/15_step7_scan.py     # 开源前敏感信息扫描
 - **覆盖范围**：精读了优先级最高的 1153 条评论（抽出 712 条、拆成 1213 条记录）；另有一层（A+，551 条）尚未精读，未纳入。
 - **长上下文掉速**：很多数字是短上下文测的，长上下文/agentic 场景会明显更慢。
 
+## 代码许可
+
+`scripts/` 和 `web/` 里的代码（`web/data.js` 是数据，除外）以 **MIT** 许可发布，见 [LICENSE](LICENSE)；数据和统计结果按下一节的 ODC-By 条款使用
+
 ## 数据许可与署名
 
 本网站与数据衍生自 **[`open-index/hacker-news`](https://huggingface.co/datasets/open-index/hacker-news)**，依 **ODC-By 1.0**（Open Data Commons Attribution License v1.0）授权。
